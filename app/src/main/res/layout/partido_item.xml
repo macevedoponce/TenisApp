@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llDatosPartido"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/vector_11"
+        app:layout_constraintWidth_percent="0.45"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/texto_contenido"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Fecha:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFechaPartido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/texto_contenido"
+            android:layout_marginStart="20dp"
+            android:text="19/07/2023:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Cancha # "
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/principal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCancha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/principal"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/texto_contenido"
+            android:text="Hora:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHoraPartido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/texto_contenido"
+            android:layout_marginBottom="10dp"
+            android:text="19:00" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llJugadores"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/vector_10"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toEndOf="@+id/llDatosPartido"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.55">
+
+        <TextView
+            android:id="@+id/tvJugador1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="14sp"
+            android:text="Martínez Torres María Alejandra"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/texto_contenido"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="VS."
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/texto_titulos"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvJugador2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/texto_contenido"
+            android:text="Ramírez Gómez Sofia Isabel"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:maxLines="1"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
